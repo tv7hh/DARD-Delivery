@@ -15,6 +15,9 @@ app.use("/api/health", healthRoutes);
 const authRoutes = require("./routes/auth");
 
 app.use("/api/auth", authRoutes);
+const storesRoutes = require("./routes/stores");
+
+app.use("/api/stores", storesRoutes);
 app.get("/", (req, res) => {
   res.json({
     project: "DARB",
