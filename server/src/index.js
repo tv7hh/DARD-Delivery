@@ -16,8 +16,9 @@ const authRoutes = require("./routes/auth");
 
 app.use("/api/auth", authRoutes);
 const storesRoutes = require("./routes/stores");
-
+const productsRoutes = require("./routes/products");
 app.use("/api/stores", storesRoutes);
+app.use("/api/products", productsRoutes);
 app.get("/", (req, res) => {
   res.json({
     project: "DARB",
