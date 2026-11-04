@@ -9,19 +9,15 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+const healthRoutes = require("./routes/health");
+
+app.use("/api/health", healthRoutes);
+
 app.get("/", (req, res) => {
   res.json({
     project: "DARB",
-    message: "DARB Central Server is running",
+    message: "DARB Central Server",
     version: "1.0.0"
-  });
-});
-
-app.get("/api/health", (req, res) => {
-  res.json({
-    status: "ok",
-    server: "DARB",
-    timestamp: new Date().toISOString()
   });
 });
 
