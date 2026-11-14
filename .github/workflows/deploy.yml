@@ -29,5 +29,6 @@ jobs:
             echo "Missing VELIXIR_API_KEY secret"
             exit 1
           fi
+          cd server
           velixir deploy --app 468d8a20-2b7f-4a23-a3bc-bd1ca9598a0d
 
