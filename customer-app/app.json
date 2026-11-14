@@ -1,0 +1,20 @@
+
+{
+  "expo": {
+    "name": "Darb",
+    "slug": "darb-customer",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#123D2B"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.darb.customer"
+    },
+    "android": {
+      "package": "com.darb.customer"
+    }
+  }
+}
